@@ -4,14 +4,13 @@ import re
 # 可以放多个m3u地址，随便加，最后一条不要逗号
 SOURCE_URLS = [
     "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/live.txt",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/fleung49/star/refs/heads/main/mit"
+    "https://gh-proxy.com/https://raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/live.txt"
 ]
 
 OUTPUT_FILE = "my_tv.m3u"
 
 # 超时，检测链接通不通
-CHECK_TIMEOUT = 8
+CHECK_TIMEOUT = 5
 
 def check_url_ok(url):
     try:
